@@ -11,59 +11,60 @@
   </head>
   <body>
 
-    <!-- off canvas / swipe right or left -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <!-- off canvas / swipe right -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        
+        <div>
+          <button type="button" class="btn btn-info">right hand/left hand trigger</button>
+          <button type="button" class="btn btn-light">light Theme</button>
+          <button type="button" class="btn btn-dark">dark theme</button>
+        </div>
+        <div class="offcanvas-body">
+          here goes easy to use either tools, lock for drag and drop items around 
+          or navigation 
+          or both
+        </div>
       </div>
-      
-      <div>
-        <button type="button" class="btn btn-info">right hand/left hand trigger</button>
-        <button type="button" class="btn btn-light">light Theme</button>
-        <button type="button" class="btn btn-dark">dark theme</button>
-      </div>
-      <div class="offcanvas-body">
-        here goes easy to use either tools, lock for drag and drop items around 
-        or navigation 
-        or both
-      </div>
-    </div>
 
-      <main class="container my-5">
-        <nav class="navbar navbar-expand-lg bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Logo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">groceries- WHOLE LIST DRAGGABLE</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">schedules</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown link
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">something</a></li>
-                    <li><a class="dropdown-item" href="#">Things to do</a></li>
-                    <li><a class="dropdown-item" href="#">suggestion
-                    </a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+    <main class="container my-5">
+      <!-- NABBAR -->
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">groceries- WHOLE LIST DRAGGABLE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">schedules</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">something</a></li>
+                  <li><a class="dropdown-item" href="#">Things to do</a></li>
+                  <li><a class="dropdown-item" href="#">suggestion
+                  </a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
-        </nav> 
-        <!-- END OF NAVBAR  -->
+        </div>
+      </nav> 
+      <!-- END OF NAVBAR  -->
 
 
       <!-- buttons for the off canvas -->
@@ -74,29 +75,31 @@
       <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
         Button with data-bs-target
       </button>
-      
+
         <!-- GROCERIE FEATURE -->
       <div class="content-groceries" id="groceries">
         <div class="list-group">
-          <h2>groceries -- UNDO BUTTON</h2>
+          <h2>groceries -- COLOR CODE FOOD ... OTHERS</h2>
           <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
             The current link item
           </a>
           <!-- List of items for groceries with icons -->
-          <a href="#" class="list-group-item list-group-item-action">Grapes </a>
-          <div class="mb-3">
+          <a href="#" class="list-group-item list-group-item-action">Grapes 
+            <div class="mb-3">
       
-            <div class="btn-group">
-              <button type="button" class="btn btn-outline-secondary">
-                <i class="bi bi-pen"></i>
-                <span class="visually-hidden">Button</span>
-              </button>
-              <button type="button" class="btn btn-outline-secondary">
-                <i class="bi bi-trash3"></i>
-                <span class="visually-hidden">Button</span>
-              </button>
-            </div>
-          </div>  <!-- END edit/trash BUTTONS -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-outline-secondary">
+                  <i class="bi bi-pen"></i>
+                  <span class="visually-hidden">Button</span>
+                </button>
+                <button type="button" class="btn btn-outline-secondary">
+                  <i class="bi bi-trash3"></i>
+                  <span class="visually-hidden">Button</span>
+                </button>
+              </div>
+            </div>  <!-- END edit/trash BUTTONS -->
+          </a>
+
           <a href="#" class="list-group-item list-group-item-action">Almonds</a>
           <a href="#" class="list-group-item list-group-item-action">Coffee</a>
           <a class="list-group-item list-group-item-action disabled">Engrais liquide</a>
