@@ -10,6 +10,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   </head>
   <body>
+
+    <!-- off canvas / swipe right or left -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      
+      <div>
+        <button type="button" class="btn btn-info">right hand/left hand trigger</button>
+        <button type="button" class="btn btn-light">light Theme</button>
+        <button type="button" class="btn btn-dark">dark theme</button>
+      </div>
+      <div class="offcanvas-body">
+        here goes easy to use either tools, lock for drag and drop items around 
+        or navigation 
+        or both
+      </div>
+    </div>
+
       <main class="container my-5">
         <nav class="navbar navbar-expand-lg bg-light">
           <div class="container-fluid">
@@ -46,6 +66,15 @@
         <!-- END OF NAVBAR  -->
 
 
+      <!-- buttons for the off canvas -->
+
+      <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        left swipe 
+      </a>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        Button with data-bs-target
+      </button>
+      
         <!-- GROCERIE FEATURE -->
       <div class="content-groceries" id="groceries">
         <div class="list-group">
@@ -75,11 +104,14 @@
 
       </div> <!-- END OF GROCERIES -->
 
-      
+
+
       <h1>Schedules</h1>
       <P>ADD AN EVENT, EDIT AN EVENT - PUBBLIC, PRIVATE EVENTS</P>
       <img src="image/week calendar.jpg" class="img-fluid" alt="...">
     </main>
+
+
 
 
 
