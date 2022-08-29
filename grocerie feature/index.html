@@ -21,29 +21,39 @@
           
           <div class="list-group row">
             <!-- main row for the item itself  EDIT CUBE CROSS THE TEXT FOR EASY SHOPPING -->
-          
-            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-              <i class="bi bi-square m-2"></i>
+            <p href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <i class="bi bi-square m-2"></i>
+              </button>
+              
               The current link item
-            </a>
+            </p>
             <!-- List of items for groceries with icons MIGHT BE A DROPDOWN MENU-->
-            <a href="#" class="col- list-group-item list-group-item-action">
-              <i class="bi bi-square m-2"></i>Grapes 
+            <p href="#" class="col- list-group-item list-group-item-action">
+              <i class="bi bi-square m-2"></i>THAT IS WHAT IM EDITING 
               <!-- edit button -->
-              <button type="button" class="btn btn-outline-secondary bg-primary">
+              <button type="button" class="btn btn-outline-secondary bg-primary class="btn btn-primary" data-bs-toggle="collapse" href="#collapseitem2" role="button" aria-expanded="false" aria-controls="collapseExample"">
                 <i class="bi bi-pen"></i>
                 <span class="visually-hidden">Button</span>
               </button>
-              <!-- Buttond to trash, add a branding and note text field -->
-              <div class="mb-3">
-                note:
-                <textarea name="itemNote" id="grapes" cols="40" rows="1" placeholder="Brand, Jokes, Love-notes"></textarea>
-                <button type="button" class="btn btn-outline-secondary bg-primary">
-                  <i class="bi bi-trash3"></i>
-                  <span class="visually-hidden">Button</span>
-                </button>
-            </a>
+
+              <div class="collapse" id="collapseitem2">
+                <div class="card card-body">
+                  <!-- Buttond to trash, add a branding and note text field -->
+                  <div class="mb-3">
+                    note:
+                    <textarea name="itemNote" id="grapes" cols="40" rows="1" placeholder="Brand, Jokes, Love-notes"></textarea>
+                    <button type="button" class="btn btn-outline-secondary bg-primary">
+                      <i class="bi bi-trash3"></i>
+                      <span class="visually-hidden">Button</span>
+                    </button>
+                </div>
+              </div>
+            </p>
           </div>  <!-- END edit/trash BUTTONS -->
+          <div class="list-item">
+
 
           <a href="#" class="list-group-item list-group-item-action">Almonds</a>
           <a href="#" class="list-group-item list-group-item-action">Coffee</a>
